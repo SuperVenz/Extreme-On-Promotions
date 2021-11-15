@@ -41,15 +41,22 @@ const ServiceCard = styled(Link)`
     width: 20%;
   }
 `;
-const LinkIcon = styled(GatsbyImage)`
+const LinkIconWrapper = styled.div`
   position: absolute;
   top: 10px;
   right: 5px;
   z-index: 50;
-  aspect-ratio: 1;
+  @media screen and (min-width: 600px) {
+    height: 25px;
+    width: 15px;
+  }
+`;
+const LinkIcon = styled(GatsbyImage)`
+  width: 15px;
   height: 15px;
   @media screen and (min-width: 600px) {
     height: 25px;
+    width: 25px;
   }
 `;
 
@@ -152,13 +159,15 @@ function ServiceCards() {
         {data.sanityIndex.services.map((arr, i) => {
           return (
             <ServiceCard key={i} to={"/services/" + arr.siteUrl.slug.current}>
-              <LinkIcon
-                image={
-                  data.sanityWidgets.serviceCardLinkIcon.image.asset
-                    .gatsbyImageData
-                }
-                alt={data.sanityWidgets.serviceCardLinkIcon.altText}
-              />
+              <LinkIconWrapper>
+                <LinkIcon
+                  image={
+                    data.sanityWidgets.serviceCardLinkIcon.image.asset
+                      .gatsbyImageData
+                  }
+                  alt={data.sanityWidgets.serviceCardLinkIcon.altText}
+                />
+              </LinkIconWrapper>
               <Icon
                 image={arr.icon.image.asset.gatsbyImageData}
                 alt={arr.icon.altText}
