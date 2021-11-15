@@ -49,6 +49,10 @@ const LinkIconWrapper = styled.div`
   @media screen and (min-width: 600px) {
     height: 25px;
     width: 15px;
+    right: 15px;
+  }
+  @media screen and (min-width: 600px) {
+    right: 20px;
   }
 `;
 const LinkIcon = styled(GatsbyImage)`
