@@ -147,7 +147,7 @@ function Reviews() {
   };
   return (
     <Wrapper>
-      <PrevArrow onclick={prevSlide} />
+      <PrevArrow onClick={prevSlide} />
       <Card>
         <Header>{data.sanityIndex.reviewsTitle}</Header>
         <PicWrapper>
@@ -175,7 +175,7 @@ function Reviews() {
           })}
         </DotsWrappers>
       </Card>
-      <AfterArrow onclick={nextSlide} />
+      <AfterArrow onClick={nextSlide} />
     </Wrapper>
   );
 }
