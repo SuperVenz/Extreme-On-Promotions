@@ -36,7 +36,7 @@ const SideCircle = styled(GatsbyImage)`
   }
 `;
 const CenterCircle = styled(GatsbyImage)`
-  height: 25vw;
+  height: 40vw;
   aspect-ratio: 1;
   margin: 0 24px;
   border-radius: 25%;

@@ -31,12 +31,12 @@ const ContactInfo = styled.a`
   }
 `;
 const Icon = styled(GatsbyImage)`
-  height: 5vw;
-  aspect-ratio: 1;
   background: var(--main-header-color);
   border: solid var(--main-header-color) 5px;
   border-radius: 50%;
   margin-right: 16px;
+  aspect-ratio: 1;
+  height: 3vh;
   @media screen and (min-width: 920px) {
     height: 25px;
   }
@@ -49,7 +49,6 @@ const Row = styled.div`
   align-items: center;
   padding: 16px 0px;
   @media screen and (min-width: 920px) {
-    padding-top: 32px;
   }
 `;
 
