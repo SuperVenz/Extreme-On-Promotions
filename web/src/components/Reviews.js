@@ -80,6 +80,10 @@ const Dots = styled.div`
     props.current ? "var(--carousel-dots)" : "black"};
   border-radius: 50%;
   display: inline-block;
+  @media screen and (min-width: 600px) {
+    height: 11px;
+    width: 10px;
+  }
 `;
 
 const ReviewerName = styled.h3`

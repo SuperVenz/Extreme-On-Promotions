@@ -39,5 +39,11 @@ export default {
       title: "Form Background Pic",
       type: "pic",
     },
+
+    {
+      name: "serviceCardLinkIcon",
+      title: "Service Cards Link Icon",
+      type: "pic",
+    },
   ],
 };

@@ -25,7 +25,7 @@ const PicWrapper = styled.div`
 `;
 const SideCircle = styled(GatsbyImage)`
   aspect-ratio: 1;
-  height: 75px;
+  height: 15vw;
   border-radius: 25%;
   cursor: pointer;
   @media screen and (min-width: 600px) {
@@ -36,7 +36,7 @@ const SideCircle = styled(GatsbyImage)`
   }
 `;
 const CenterCircle = styled(GatsbyImage)`
-  height: 156px;
+  height: 25vw;
   aspect-ratio: 1;
   margin: 0 24px;
   border-radius: 25%;
@@ -64,6 +64,10 @@ const Dots = styled.div`
     props.current ? "var(--carousel-dots)" : "black"};
   border-radius: 50%;
   display: inline-block;
+  @media screen and (min-width: 600px) {
+    height: 11px;
+    width: 10px;
+  }
 `;
 
 const SubHeader = styled.h3`

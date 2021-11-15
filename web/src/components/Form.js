@@ -76,15 +76,15 @@ const AreaText = styled.textarea`
 const Submit = styled.button`
   width: 40%;
   margin: 20px auto;
-  padding: 4px;
   font-size: 24px;
   border-radius: 4px;
   background: var(--form-bttn-background-color);
   color: var(--form-bttn-text-color);
-  border: none;
+  border: black solid 3px;
   cursor: pointer;
   @media screen and (min-width: 920px) {
     width: 15%;
+    padding: 8px 0px;
   }
 `;
 function Form(props) {

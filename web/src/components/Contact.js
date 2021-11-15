@@ -31,7 +31,7 @@ const ContactInfo = styled.a`
   }
 `;
 const Icon = styled(GatsbyImage)`
-  height: 15px;
+  height: 5vw;
   aspect-ratio: 1;
   background: var(--main-header-color);
   border: solid var(--main-header-color) 5px;
@@ -43,7 +43,7 @@ const Icon = styled(GatsbyImage)`
 `;
 const Row = styled.div`
   display: flex;
-  width: 100%;
+  height: 5vw;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;

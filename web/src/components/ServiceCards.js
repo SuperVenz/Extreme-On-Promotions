@@ -21,6 +21,7 @@ const CardWrapper = styled.div`
 `;
 const ServiceCard = styled(Link)`
   width: 50%;
+  position: relative;
   background-color: var(--service-card-color);
   display: flex;
   flex-flow: column nowrap;
@@ -28,6 +29,7 @@ const ServiceCard = styled(Link)`
   border: solid black 5px;
   margin-bottom: 16px;
   border-radius: 5%;
+  padding-bottom: 24px;
 
   @media screen and (min-width: 600px) {
     width: 30%;
@@ -36,9 +38,21 @@ const ServiceCard = styled(Link)`
   @media screen and (min-width: 1000px) {
   }
   @media screen and (min-width: 1500px) {
-    width: 450px;
+    width: 20%;
   }
 `;
+const LinkIcon = styled(GatsbyImage)`
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  z-index: 50;
+  aspect-ratio: 1;
+  height: 5vw;
+  @media screen and (min-width: 600px) {
+    height: 2vw;
+  }
+`;
+
 const Icon = styled(GatsbyImage)`
   justify-self: center;
   align-self: center;
@@ -67,6 +81,7 @@ const Text = styled.h3`
   }
   @media screen and (min-width: 1000px) {
     height: 75px;
+    padding: 16px 20px;
   }
 `;
 const Line = styled.hr`
@@ -74,6 +89,7 @@ const Line = styled.hr`
   border: none;
   background: var(--service-card-font-color);
   height: 3px;
+  border-radius: 25%;
 `;
 const Tag = styled.p`
   color: var(--service-card-font-color);
@@ -97,6 +113,16 @@ const Tag = styled.p`
 function ServiceCards() {
   const data = useStaticQuery(graphql`
     {
+      sanityWidgets {
+        serviceCardLinkIcon {
+          altText
+          image {
+            asset {
+              gatsbyImageData
+            }
+          }
+        }
+      }
       sanityIndex {
         serviceCardsTitle
         services {
@@ -126,6 +152,13 @@ function ServiceCards() {
         {data.sanityIndex.services.map((arr, i) => {
           return (
             <ServiceCard key={i} to={"/services/" + arr.siteUrl.slug.current}>
+              <LinkIcon
+                image={
+                  data.sanityWidgets.serviceCardLinkIcon.image.asset
+                    .gatsbyImageData
+                }
+                alt={data.sanityWidgets.serviceCardLinkIcon.altText}
+              />
               <Icon
                 image={arr.icon.image.asset.gatsbyImageData}
                 alt={arr.icon.altText}
