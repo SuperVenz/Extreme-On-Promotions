@@ -47,9 +47,9 @@ const LinkIcon = styled(GatsbyImage)`
   right: 5px;
   z-index: 50;
   aspect-ratio: 1;
-  height: 5vw;
+  height: 15px;
   @media screen and (min-width: 600px) {
-    height: 2vw;
+    height: 25px;
   }
 `;
 
