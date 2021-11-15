@@ -170,7 +170,7 @@ function Reviews() {
             if (i === current) {
               return <Dots key={i} current={true} />;
             } else {
-              return <Dots />;
+              return <Dots key={i} />;
             }
           })}
         </DotsWrappers>
