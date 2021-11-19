@@ -36,8 +36,8 @@ function Index({ data }) {
       <Logo />
       <HeroBanner />
       <Wrapper>
-        <Header>Test</Header>
-        <Text>Hello</Text>
+        <Header>{data.sanityIndex.topContent.header}</Header>
+        <Text>{data.sanityIndex.topContent.text}</Text>
       </Wrapper>
       <Carousel />
       <ServiceCards />
@@ -48,6 +48,10 @@ function Index({ data }) {
 export const query = graphql`
   {
     sanityIndex {
+      topContent {
+        text
+        header
+      }
       seo {
         description
         pageTitle

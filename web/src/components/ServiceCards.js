@@ -73,7 +73,6 @@ const Icon = styled(GatsbyImage)`
   justify-self: center;
   align-self: center;
   width: 100%;
-  border-radius: 5% 5% 0px 0px;
   @media screen and (min-width: 600px) {
     height: 20vw;
   }
@@ -99,7 +98,7 @@ const Text = styled.h3`
   }
   @media screen and (min-width: 1000px) {
     height: 75px;
-    padding: 16px 20px;
+    padding: 16px 20px 0px;
   }
 `;
 const Line = styled.hr`
