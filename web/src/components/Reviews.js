@@ -100,9 +100,12 @@ const ReviewerName = styled.h3`
   font-weight: bold;
 `;
 const Text = styled.p`
-  padding: 32px;
+  padding: 16px;
+  margin-top: 8px;
+  background-color: var(--review-text-background);
+  border: solid var(--main-border-color) 2px;
   @media screen and (min-width: 920px) {
-    padding: 16px 20%;
+    padding: 16px;
   }
 `;
 const Location = styled.p`

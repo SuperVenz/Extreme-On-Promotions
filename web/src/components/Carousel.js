@@ -13,7 +13,7 @@ const Wrapper = styled.div`
     padding-bottom: 20%;
   }
   @media screen and (min-width: 1000px) {
-    padding-bottom: 10vh;
+    padding-bottom: 15vh;
   }
 `;
 const Header = styled.h2``;
@@ -26,27 +26,23 @@ const PicWrapper = styled.div`
 const SideCircle = styled(GatsbyImage)`
   aspect-ratio: 1;
   height: 15vw;
-  border-radius: 25%;
+  border: solid var(--main-border-color) 3px;
   cursor: pointer;
   @media screen and (min-width: 600px) {
-    height: 20vw;
+    height: 17vw;
   }
   @media screen and (min-width: 1000px) {
-    height: 15vw;
   }
 `;
 const CenterCircle = styled(GatsbyImage)`
   height: 40vw;
   aspect-ratio: 1;
   margin: 0 24px;
-  border-radius: 25%;
+  border: solid var(--main-border-color) 5px;
   @media screen and (min-width: 600px) {
     height: 30vw;
-    margin: 0 50px;
   }
   @media screen and (min-width: 1000px) {
-    height: 25vw;
-    margin: 0 100px;
   }
 `;
 const DotsWrappers = styled.div`

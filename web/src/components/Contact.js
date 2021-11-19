@@ -47,8 +47,9 @@ const Row = styled.div`
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  padding: 16px 0px;
+  padding: 8px 0px;
   @media screen and (min-width: 920px) {
+    padding: 8px 0px;
   }
 `;
 

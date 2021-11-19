@@ -38,12 +38,11 @@ const Text = styled.p`
 const Button = styled(Link)`
   background: var(--hero-bttn-background);
   color: var(--hero-bttn-text-color);
-  border: none;
+  border: solid var(--main-border-color) 2px;
   width: 60%;
   padding: 10px 0;
   text-align: center;
   font-size: 32px;
-  border-radius: 16px;
   cursor: pointer;
   text-decoration: none;
   @media screen and (min-width: 600px) {

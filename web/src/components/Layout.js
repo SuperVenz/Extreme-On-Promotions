@@ -83,6 +83,12 @@ function Layout({ children, title, description, keywords }) {
         contactBackground {
           hex
         }
+        reviewTextBackground {
+          hex
+        }
+        borderColor {
+          hex
+        }
       }
     }
   `);
@@ -99,9 +105,12 @@ function Layout({ children, title, description, keywords }) {
   --main-font-color:${data.sanityTheme.mainFontColor.hex};
   --main-header-color:${data.sanityTheme.headerFontColor.hex};
   --main-background-color:${data.sanityTheme.backgroundColor.hex};
+  --main-border-color:${data.sanityTheme.borderColor.hex}
   /* Service Cards */
   --service-card-color:${data.sanityTheme.serviceCardColor.hex};
   --service-card-font-color:${data.sanityTheme.serviceCardFontColor.hex};
+  /* Reviews */
+  --review-text-background:${data.sanityTheme.reviewTextBackground.hex}
   /* Form */
   --form-background-color:${data.sanityTheme.formBoxColor.hex};
   --form-font-color:${data.sanityTheme.formFontColor.hex};

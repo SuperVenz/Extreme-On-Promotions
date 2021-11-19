@@ -96,6 +96,12 @@ export default {
       fieldset: "mainTheme",
     },
     {
+      name: "borderColor",
+      title: "Border Color",
+      type: "color",
+      fieldset: "mainTheme",
+    },
+    {
       name: "serviceCardFontColor",
       title: "Service Card Font Color",
       type: "color",
@@ -106,6 +112,11 @@ export default {
       title: "Service Card Color",
       type: "color",
       fieldset: "serviceCard",
+    },
+    {
+      name: "reviewTextBackground",
+      title: "Review Text Background",
+      type: "color",
     },
     {
       name: "backArrow",

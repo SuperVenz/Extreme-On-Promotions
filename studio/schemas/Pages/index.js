@@ -10,6 +10,11 @@ export default {
       type: "banner",
     },
     {
+      name: "topContent",
+      title: "Top Content",
+      type: "article",
+    },
+    {
       name: "carousel",
       title: "Carousel",
       type: "array",

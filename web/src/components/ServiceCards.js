@@ -5,6 +5,12 @@ import { useStaticQuery, graphql } from "gatsby";
 import { Link } from "gatsby";
 const Wrapper = styled.div`
   padding-bottom: 10vh;
+  @media screen and (min-width: 600px) {
+    padding-bottom: 20%;
+  }
+  @media screen and (min-width: 1000px) {
+    padding-bottom: 15vh;
+  }
 `;
 const Header = styled.h2``;
 const CardWrapper = styled.div`
@@ -20,16 +26,15 @@ const CardWrapper = styled.div`
   }
 `;
 const ServiceCard = styled(Link)`
-  width: 50%;
+  width: 70%;
   position: relative;
   background-color: var(--service-card-color);
   display: flex;
   flex-flow: column nowrap;
   text-decoration: none;
-  border: solid black 5px;
+  border: solid var(--main-border-color) 3px;
   margin-bottom: 16px;
-  border-radius: 5%;
-  padding-bottom: 24px;
+  padding-bottom: 10%;
 
   @media screen and (min-width: 600px) {
     width: 30%;
@@ -38,7 +43,7 @@ const ServiceCard = styled(Link)`
   @media screen and (min-width: 1000px) {
   }
   @media screen and (min-width: 1500px) {
-    width: 20%;
+    width: 24%;
   }
 `;
 const LinkIconWrapper = styled.div`
