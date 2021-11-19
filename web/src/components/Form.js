@@ -77,7 +77,7 @@ const Submit = styled.button`
   width: 40%;
   margin: 20px auto;
   font-size: 24px;
-  border-radius: 4px;
+  border-radius: 16px;
   background: var(--form-bttn-background-color);
   color: var(--form-bttn-text-color);
   border: black solid 3px;

@@ -77,6 +77,8 @@ const Icon = styled(GatsbyImage)`
   }
 `;
 const Text = styled.h3`
+  border-top: solid black 3px;
+
   color: var(--service-card-font-color);
   display: flex;
   flex-flow: row wrap;

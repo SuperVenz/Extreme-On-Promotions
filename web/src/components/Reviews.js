@@ -21,6 +21,8 @@ const PicWrapper = styled.div`
 const PrevArrow = styled.div`
   cursor: pointer;
   width: 15px;
+  align-self: flex-start;
+  margin-top: 50%;
   height: 15px;
   border-top: 2px solid #000;
   border-right: 2px solid #000;
@@ -28,26 +30,32 @@ const PrevArrow = styled.div`
   @media screen and (min-width: 600px) {
     height: 25px;
     width: 25px;
+    margin-top: 33%;
   }
   @media screen and (min-width: 1000px) {
     width: 32px;
     height: 32px;
+    margin-top: 20%;
   }
 `;
 const AfterArrow = styled.div`
   cursor: pointer;
   width: 15px;
   height: 15px;
+  align-self: flex-start;
+  margin-top: 50%;
   border-top: 2px solid #000;
   border-right: 2px solid #000;
   transform: rotate(45deg);
   @media screen and (min-width: 600px) {
     height: 25px;
     width: 25px;
+    margin-top: 33%;
   }
   @media screen and (min-width: 1000px) {
     width: 32px;
     height: 32px;
+    margin-top: 20%;
   }
 `;
 const Card = styled.div`

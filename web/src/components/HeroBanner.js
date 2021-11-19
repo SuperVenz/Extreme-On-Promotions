@@ -43,7 +43,7 @@ const Button = styled(Link)`
   padding: 10px 0;
   text-align: center;
   font-size: 32px;
-  border-radius: 4px;
+  border-radius: 16px;
   cursor: pointer;
   text-decoration: none;
   @media screen and (min-width: 600px) {
