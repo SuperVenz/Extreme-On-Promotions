@@ -18,48 +18,9 @@ const PicWrapper = styled.div`
   justify-content: center;
   align-items: center;
 `;
-const PrevArrow = styled.div`
-  cursor: pointer;
-  width: 15px;
-  align-self: flex-start;
-  margin-top: 50%;
-  height: 15px;
-  border-top: 2px solid #000;
-  border-right: 2px solid #000;
-  transform: rotate(-135deg);
-  @media screen and (min-width: 600px) {
-    height: 25px;
-    width: 25px;
-    margin-top: 33%;
-  }
-  @media screen and (min-width: 1000px) {
-    width: 32px;
-    height: 32px;
-    margin-top: 20%;
-  }
-`;
-const AfterArrow = styled.div`
-  cursor: pointer;
-  width: 15px;
-  height: 15px;
-  align-self: flex-start;
-  margin-top: 50%;
-  border-top: 2px solid #000;
-  border-right: 2px solid #000;
-  transform: rotate(45deg);
-  @media screen and (min-width: 600px) {
-    height: 25px;
-    width: 25px;
-    margin-top: 33%;
-  }
-  @media screen and (min-width: 1000px) {
-    width: 32px;
-    height: 32px;
-    margin-top: 20%;
-  }
-`;
+
 const Card = styled.div`
-  width: 80%;
+  width: 90%;
 `;
 const CenterCircle = styled(GatsbyImage)`
   height: 125px;
@@ -98,16 +59,61 @@ const ReviewerName = styled.h3`
   text-align: center;
   padding: 16px 0;
   font-weight: bold;
+  color: black;
 `;
 const Text = styled.p`
   padding: 16px;
-  margin-top: 8px;
+  margin: 8px;
   background-color: var(--review-text-background);
   border: solid var(--main-border-color) 2px;
+  width: 90%;
   @media screen and (min-width: 920px) {
     padding: 16px;
+    width: 50vw;
   }
 `;
+const TextWrapper = styled.div`
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+`;
+const PrevArrow = styled.div`
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(-135deg);
+
+  @media screen and (min-width: 600px) {
+    height: 25px;
+    width: 25px;
+  }
+  @media screen and (min-width: 1000px) {
+    width: 32px;
+    height: 32px;
+  }
+`;
+const AfterArrow = styled.div`
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(45deg);
+
+  @media screen and (min-width: 600px) {
+    height: 25px;
+    width: 25px;
+  }
+  @media screen and (min-width: 1000px) {
+    width: 32px;
+    height: 32px;
+  }
+`;
+
 const Location = styled.p`
   text-align: right;
   font-style: italic;
@@ -158,7 +164,6 @@ function Reviews() {
   };
   return (
     <Wrapper>
-      <PrevArrow onClick={prevSlide} />
       <Card>
         <Header>{data.sanityIndex.reviewsTitle}</Header>
         <PicWrapper>
@@ -174,7 +179,11 @@ function Reviews() {
           {data.sanityIndex.reviews[current].reviewerName}
         </ReviewerName>
         <Star>&#9733; &#9733; &#9733; &#9733; &#9733; </Star>
-        <Text>{data.sanityIndex.reviews[current].review}</Text>
+        <TextWrapper>
+          <PrevArrow onClick={prevSlide} />
+          <Text>{data.sanityIndex.reviews[current].review}</Text>
+          <AfterArrow onClick={nextSlide} />
+        </TextWrapper>
         <Location>- {data.sanityIndex.reviews[current].location}</Location>
         <DotsWrappers>
           {data.sanityIndex.reviews.map((arr, i) => {
@@ -186,7 +195,6 @@ function Reviews() {
           })}
         </DotsWrappers>
       </Card>
-      <AfterArrow onClick={nextSlide} />
     </Wrapper>
   );
 }

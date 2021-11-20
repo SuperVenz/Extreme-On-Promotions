@@ -26,7 +26,7 @@ const CardWrapper = styled.div`
   }
 `;
 const ServiceCard = styled(Link)`
-  width: 70%;
+  width: 50%;
   position: relative;
   background-color: var(--service-card-color);
   display: flex;
@@ -73,6 +73,7 @@ const Icon = styled(GatsbyImage)`
   justify-self: center;
   align-self: center;
   width: 100%;
+  height: 30vw;
   @media screen and (min-width: 600px) {
     height: 20vw;
   }

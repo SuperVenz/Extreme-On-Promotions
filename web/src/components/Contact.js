@@ -22,12 +22,12 @@ const ContactInfo = styled.a`
   color: var(--contact-links);
   text-decoration: none;
   font-size: 18px;
+  width: 200px;
   @media screen and (min-width: 600px) {
     font-size: 24px;
   }
   @media screen and (min-width: 920px) {
     font-size: 24px;
-    width: 100%;
   }
 `;
 const Icon = styled(GatsbyImage)`
@@ -47,7 +47,7 @@ const Row = styled.div`
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  padding: 8px 0px;
+  padding: 16px 0px;
   @media screen and (min-width: 920px) {
     padding: 8px 0px;
   }
