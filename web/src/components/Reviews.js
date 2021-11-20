@@ -10,6 +10,12 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding-bottom: 10vh;
+  @media screen and (min-width: 600px) {
+    padding-bottom: 20%;
+  }
+  @media screen and (min-width: 1000px) {
+    padding-bottom: 20vh;
+  }
 `;
 const Header = styled.h2``;
 const PicWrapper = styled.div`

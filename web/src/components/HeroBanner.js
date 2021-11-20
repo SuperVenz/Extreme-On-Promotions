@@ -22,7 +22,10 @@ const Header = styled.h1`
   padding: 16px 8px;
   font-weight: bold;
   @media screen and (min-width: 600px) {
-    margin: 0px;
+    margin: 0px 10%;
+  }
+  @media screen and (min-width: 1000px) {
+    margin: 0px 20%;
   }
 `;
 const Text = styled.p`

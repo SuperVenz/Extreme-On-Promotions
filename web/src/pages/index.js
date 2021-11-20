@@ -16,7 +16,7 @@ const Wrapper = styled.div`
     padding-bottom: 20%;
   }
   @media screen and (min-width: 1000px) {
-    padding-bottom: 10vh;
+    padding-bottom: 20vh;
   }
 `;
 const Text = styled.p`

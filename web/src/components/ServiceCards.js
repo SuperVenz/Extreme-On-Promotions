@@ -9,7 +9,7 @@ const Wrapper = styled.div`
     padding-bottom: 20%;
   }
   @media screen and (min-width: 1000px) {
-    padding-bottom: 15vh;
+    padding-bottom: 20vh;
   }
 `;
 const Header = styled.h2``;
@@ -94,7 +94,7 @@ const Text = styled.h3`
   padding: 8px 8px 0px;
   height: 32px;
   @media screen and (min-width: 600px) {
-    padding: 16px 8px;
+    padding: 0px 8px 16px;
     height: 45px;
   }
   @media screen and (min-width: 1000px) {
@@ -108,6 +108,8 @@ const Line = styled.hr`
   background: var(--service-card-font-color);
   height: 3px;
   border-radius: 25%;
+  @media screen and (min-width: 600px) {
+  }
 `;
 const Tag = styled.p`
   color: var(--service-card-font-color);
@@ -120,7 +122,7 @@ const Tag = styled.p`
   @media screen and (min-width: 600px) {
     font-size: 16px;
     padding-top: 16px;
-    height: 60px;
+    height: 80px;
   }
   @media screen and (min-width: 1000px) {
     padding: 16px 8px;
