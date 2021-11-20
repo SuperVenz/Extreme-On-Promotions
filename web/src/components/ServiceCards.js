@@ -36,6 +36,8 @@ const ServiceCard = styled(Link)`
   margin-bottom: 16px;
   padding-bottom: 10%;
   border-radius: 5%;
+  -webkit-box-shadow: 6px 9px 15px 0px #000000;
+  box-shadow: 6px 9px 15px 0px #000000;
   @media screen and (min-width: 600px) {
     width: 30%;
     padding: 0px 0 15px;

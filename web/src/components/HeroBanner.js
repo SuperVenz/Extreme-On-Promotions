@@ -49,7 +49,8 @@ const Button = styled(Link)`
   cursor: pointer;
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
-
+  -webkit-box-shadow: 6px 9px 15px 0px #000000;
+  box-shadow: 6px 9px 15px 0px #000000;
   text-decoration: none;
   @media screen and (min-width: 600px) {
     width: 33%;
