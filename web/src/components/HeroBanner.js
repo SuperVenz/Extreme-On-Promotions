@@ -47,6 +47,9 @@ const Button = styled(Link)`
   text-align: center;
   font-size: 32px;
   cursor: pointer;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+
   text-decoration: none;
   @media screen and (min-width: 600px) {
     width: 33%;

@@ -28,6 +28,8 @@ const SideCircle = styled(GatsbyImage)`
   height: 15vw;
   border: solid var(--main-border-color) 3px;
   cursor: pointer;
+  border-radius: 5%;
+
   @media screen and (min-width: 600px) {
     height: 17vw;
   }
@@ -38,6 +40,8 @@ const CenterCircle = styled(GatsbyImage)`
   height: 40vw;
   aspect-ratio: 1;
   margin: 0 24px;
+  border-radius: 5%;
+
   border: solid var(--main-border-color) 5px;
   @media screen and (min-width: 600px) {
     height: 30vw;

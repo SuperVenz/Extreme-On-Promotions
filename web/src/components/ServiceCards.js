@@ -35,7 +35,7 @@ const ServiceCard = styled(Link)`
   border: solid var(--main-border-color) 3px;
   margin-bottom: 16px;
   padding-bottom: 10%;
-
+  border-radius: 5%;
   @media screen and (min-width: 600px) {
     width: 30%;
     padding: 0px 0 15px;
@@ -74,6 +74,9 @@ const Icon = styled(GatsbyImage)`
   align-self: center;
   width: 100%;
   height: 30vw;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+
   @media screen and (min-width: 600px) {
     height: 20vw;
   }

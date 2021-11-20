@@ -81,6 +81,8 @@ const Submit = styled.button`
   color: var(--form-bttn-text-color);
   border: black solid 3px;
   cursor: pointer;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
   @media screen and (min-width: 920px) {
     width: 15%;
     padding: 8px 0px;
