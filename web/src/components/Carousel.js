@@ -29,8 +29,8 @@ const SideCircle = styled(GatsbyImage)`
   border: solid var(--main-border-color) 3px;
   cursor: pointer;
   border-radius: 5%;
-  -webkit-box-shadow: 6px 9px 15px 0px #000000;
-  box-shadow: 6px 9px 15px 0px #000000;
+  -webkit-box-shadow: 6px 9px 15px -2px #000000;
+  box-shadow: 6px 9px 15px -2px #000000;
 
   @media screen and (min-width: 600px) {
     height: 17vw;
@@ -43,9 +43,9 @@ const CenterCircle = styled(GatsbyImage)`
   aspect-ratio: 1;
   margin: 0 24px;
   border-radius: 5%;
-  -webkit-box-shadow: 6px 9px 15px 0px #000000;
-  box-shadow: 6px 9px 15px 0px #000000;
-  border: solid var(--main-border-color) 5px;
+  -webkit-box-shadow: 6px 9px 15px -2px #000000;
+  box-shadow: 6px 9px 15px -2px #000000;
+  border: solid var(--main-border-color) 3px;
   @media screen and (min-width: 600px) {
     height: 30vw;
   }

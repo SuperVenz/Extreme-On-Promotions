@@ -73,6 +73,8 @@ const Text = styled.p`
   background-color: var(--review-text-background);
   border: solid var(--main-border-color) 2px;
   width: 90%;
+  -webkit-box-shadow: 6px 9px 15px -10px #000000;
+  box-shadow: 6px 9px 15px -10px #000000;
   @media screen and (min-width: 920px) {
     padding: 16px;
     width: 50vw;

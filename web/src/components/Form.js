@@ -83,8 +83,8 @@ const Submit = styled.button`
   cursor: pointer;
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
-  -webkit-box-shadow: 6px 9px 15px 0px #000000;
-  box-shadow: 6px 9px 15px 0px #000000;
+  -webkit-box-shadow: 6px 9px 15px -2px #000000;
+  box-shadow: 6px 9px 15px -2px #000000;
   @media screen and (min-width: 920px) {
     width: 15%;
     padding: 8px 0px;
