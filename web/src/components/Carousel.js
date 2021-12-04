@@ -87,6 +87,7 @@ const Text = styled.p`
     margin: 0px 10%;
     height: 300px;
     scroll-behavior: smooth;
+    padding: 8px;
   }
 `;
 function Carousel() {
