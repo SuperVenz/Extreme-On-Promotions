@@ -78,6 +78,7 @@ const Text = styled.p`
   @media screen and (min-width: 920px) {
     padding: 16px;
     width: 50vw;
+    margin: 8px 10%;
   }
 `;
 const TextWrapper = styled.div`

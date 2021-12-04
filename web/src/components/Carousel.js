@@ -26,7 +26,8 @@ const PicWrapper = styled.div`
 const SideCircle = styled(GatsbyImage)`
   aspect-ratio: 1;
   height: 15vw;
-  border: solid var(--main-border-color) 3px;
+  background-color: var(--main-border-color);
+  border: solid var(--main-border-color) 1px;
   cursor: pointer;
   border-radius: 5%;
   -webkit-box-shadow: 6px 9px 15px -2px #000000;
@@ -42,10 +43,11 @@ const CenterCircle = styled(GatsbyImage)`
   height: 40vw;
   aspect-ratio: 1;
   margin: 0 24px;
+  background-color: var(--main-border-color);
   border-radius: 5%;
   -webkit-box-shadow: 6px 9px 15px -2px #000000;
   box-shadow: 6px 9px 15px -2px #000000;
-  border: solid var(--main-border-color) 3px;
+  border: solid var(--main-border-color) 2px;
   @media screen and (min-width: 600px) {
     height: 30vw;
   }
@@ -156,6 +158,7 @@ function Carousel() {
               .gatsbyImageData
           }
           alt={data.sanityIndex.carousel[current].pictures.altText}
+          objectFit="cover"
         />
         <div onClick={nextSlide}>
           <SideCircle

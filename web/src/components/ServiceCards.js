@@ -35,12 +35,12 @@ const ServiceCard = styled(Link)`
   border: solid var(--main-border-color) 3px;
   margin-bottom: 16px;
   padding-bottom: 10%;
-  border-radius: 5%;
+  border-radius: 5px;
   -webkit-box-shadow: 6px 9px 15px -2px #000000;
   box-shadow: 6px 9px 15px -2px #000000;
   @media screen and (min-width: 600px) {
     width: 30%;
-    padding: 0px 0 15px;
+    padding: 0px 0px 15px;
   }
   @media screen and (min-width: 1000px) {
   }
@@ -72,12 +72,13 @@ const LinkIcon = styled(GatsbyImage)`
 `;
 
 const Icon = styled(GatsbyImage)`
+  background-color: var(--main-border-color);
   justify-self: center;
   align-self: center;
   width: 100%;
   height: 30vw;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 
   @media screen and (min-width: 600px) {
     height: 20vw;
