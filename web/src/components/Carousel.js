@@ -82,11 +82,12 @@ const SubHeader = styled.h3`
 `;
 const Text = styled.p`
   overflow-y: scroll;
-  height: 500px;
+  margin-top: 8px;
+  height: 250px;
+  scroll-behavior: smooth;
   @media screen and (min-width: 600px) {
     margin: 0px 10%;
     height: 300px;
-    scroll-behavior: smooth;
     padding: 8px;
   }
 `;

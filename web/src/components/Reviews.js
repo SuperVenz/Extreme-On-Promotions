@@ -79,7 +79,7 @@ const Text = styled.p`
   @media screen and (min-width: 920px) {
     padding: 16px;
     width: 50vw;
-    margin: 8px 10%;
+    margin: 8px 5%;
   }
 `;
 const TextWrapper = styled.div`
@@ -88,6 +88,9 @@ const TextWrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: 250px;
+  @media screen and (min-width: 600px) {
+    height: 150px;
+  }
 `;
 const PrevArrow = styled.div`
   cursor: pointer;

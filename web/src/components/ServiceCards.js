@@ -89,7 +89,6 @@ const Icon = styled(GatsbyImage)`
 `;
 const Text = styled.h3`
   border-top: solid black 3px;
-
   color: var(--service-card-font-color);
   display: flex;
   flex-flow: row wrap;
@@ -100,7 +99,7 @@ const Text = styled.h3`
   padding: 8px 8px 0px;
   height: 32px;
   @media screen and (min-width: 600px) {
-    padding: 0px 8px 16px;
+    padding: 16px 8px 16px;
     height: 45px;
   }
   @media screen and (min-width: 1000px) {
