@@ -52,7 +52,7 @@ const Dots = styled.div`
   width: 7px;
   margin: 5px;
   background-color: ${(props) =>
-    props.current ? "var(--carousel-dots)" : "black"};
+    props.current ? "var(--carousel-dots)" : "var(--main-font-color)"};
   border-radius: 50%;
   display: inline-block;
   @media screen and (min-width: 600px) {
@@ -65,13 +65,14 @@ const ReviewerName = styled.h3`
   text-align: center;
   padding: 16px 0;
   font-weight: bold;
-  color: black;
+  color: var(--main-font-color);
 `;
 const Text = styled.p`
   padding: 16px;
   margin: 8px;
   background-color: var(--review-text-background);
   border: solid var(--main-border-color) 2px;
+  color: black;
   width: 90%;
   -webkit-box-shadow: 6px 9px 15px -10px #000000;
   box-shadow: 6px 9px 15px -10px #000000;

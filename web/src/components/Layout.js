@@ -125,10 +125,9 @@ function Layout({ children, title, description, keywords }) {
   --contact-links:${data.sanityTheme.contactLinks.hex};
   --contact-header:${data.sanityTheme.contactHeader.hex};
 }
-body {
+html body {
   font-family: "Roboto";
   background-color:var(--main-background-color);
-  background-color: whitesmoke;
 }
 
 h1

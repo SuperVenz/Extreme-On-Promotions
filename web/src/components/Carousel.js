@@ -66,7 +66,7 @@ const Dots = styled.div`
   width: 7px;
   margin: 5px;
   background-color: ${(props) =>
-    props.current ? "var(--carousel-dots)" : "black"};
+    props.current ? "var(--carousel-dots)" : "var(--main-font-color)"};
   border-radius: 50%;
   display: inline-block;
   @media screen and (min-width: 600px) {
@@ -81,8 +81,12 @@ const SubHeader = styled.h3`
   font-weight: 600;
 `;
 const Text = styled.p`
+  overflow-y: scroll;
+  height: 500px;
   @media screen and (min-width: 600px) {
     margin: 0px 10%;
+    height: 300px;
+    scroll-behavior: smooth;
   }
 `;
 function Carousel() {

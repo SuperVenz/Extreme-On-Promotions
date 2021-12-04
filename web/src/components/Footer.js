@@ -33,7 +33,6 @@ const Header = styled.h2`
 const Text = styled.p`
   color: var(--contact-header);
   padding-bottom: 24px;
-  width: 80%;
 `;
 function Footer() {
   const data = useStaticQuery(graphql`

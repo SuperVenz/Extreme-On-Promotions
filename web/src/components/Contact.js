@@ -31,8 +31,6 @@ const ContactInfo = styled.a`
   }
 `;
 const Icon = styled(GatsbyImage)`
-  background: var(--main-header-color);
-  border: solid var(--main-header-color) 5px;
   border-radius: 50%;
   margin-right: 16px;
   aspect-ratio: 1;

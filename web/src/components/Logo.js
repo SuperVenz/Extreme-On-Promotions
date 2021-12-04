@@ -23,8 +23,7 @@ const Wrapper = styled.div`
   }
 `;
 const Pic = styled(GatsbyImage)`
-  width: 35px;
-  height: 35px;
+  width: 100px;
   margin-top: 5px;
   justify-content: center;
   align-items: center;
