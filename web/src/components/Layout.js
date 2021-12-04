@@ -128,6 +128,7 @@ function Layout({ children, title, description, keywords }) {
 html body {
   font-family: "Roboto";
   background-color:var(--main-background-color);
+  overflow-y:hidden;
 }
 
 h1
