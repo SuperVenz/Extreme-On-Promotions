@@ -51,7 +51,8 @@ const CenterCircle = styled(GatsbyImage)`
   @media screen and (min-width: 600px) {
     height: 30vw;
   }
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 900px) {
+    height: 25vw;
   }
 `;
 const DotsWrappers = styled.div`

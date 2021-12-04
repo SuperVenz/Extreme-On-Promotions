@@ -78,7 +78,6 @@ const Text = styled.p`
   box-shadow: 6px 9px 15px -10px #000000;
   @media screen and (min-width: 920px) {
     padding: 16px;
-    width: 50vw;
     margin: 8px 5%;
   }
 `;
@@ -90,6 +89,9 @@ const TextWrapper = styled.div`
   height: 250px;
   @media screen and (min-width: 600px) {
     height: 150px;
+  }
+  @media screen and (min-width: 900px) {
+    height: 350px;
   }
 `;
 const PrevArrow = styled.div`

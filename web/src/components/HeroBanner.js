@@ -42,8 +42,8 @@ const Button = styled(Link)`
   background: var(--hero-bttn-background);
   color: var(--hero-bttn-text-color);
   border: solid var(--main-border-color) 2px;
-  width: 60%;
-  padding: 10px 0;
+  width: auto;
+  padding: 10px 16px;
   text-align: center;
   font-size: 32px;
   cursor: pointer;
@@ -53,11 +53,9 @@ const Button = styled(Link)`
   box-shadow: 6px 9px 15px -2px #000000;
   text-decoration: none;
   @media screen and (min-width: 600px) {
-    width: 33%;
-    padding: 16px 0;
+    padding: 16px 16px;
   }
   @media screen and (min-width: 920px) {
-    width: 20%;
   }
 `;
 
