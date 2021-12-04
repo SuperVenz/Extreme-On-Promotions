@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { convertToBgImage } from "gbimage-bridge";
 import BackgroundImage from "gatsby-background-image";
 import { useStaticQuery, graphql, Link } from "gatsby";
-
+import LightSpeed from "react-reveal/LightSpeed";
 // Styles
 const Hero = styled(BackgroundImage)`
   display: flex;
@@ -30,9 +30,8 @@ const Header = styled.h1`
 `;
 const Text = styled.p`
   color: var(--subtext-font-color);
-  width: 80%;
   padding: 16px 8px;
-  margin-bottom: 26px;
+  margin: 0px 10% 26px;
   font-weight: 500;
   text-align: center;
   @media screen and (min-width: 600px) {
@@ -88,8 +87,10 @@ function HeroBanner() {
   );
   return (
     <Hero {...heroBackground} preserveStackingContext alt="back ground pic">
-      <Header>{data.sanityIndex.heroBanner.textContent.header}</Header>
-      <Text>{data.sanityIndex.heroBanner.textContent.text}</Text>
+      <LightSpeed left duration={1000}>
+        <Header>{data.sanityIndex.heroBanner.textContent.header}</Header>
+        <Text>{data.sanityIndex.heroBanner.textContent.text}</Text>
+      </LightSpeed>
       <Button to="/contact">
         {data.sanityIndex.heroBanner.button.tagline}
       </Button>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { useStaticQuery, graphql } from "gatsby";
-
+import Flip from "react-reveal/Flip";
 // Styles
 const Wrapper = styled.div`
   padding: 0 16px;
@@ -151,30 +151,36 @@ function Carousel() {
       <Header>{data.sanityIndex.carousel[current].textContent.header}</Header>
       <PicWrapper>
         <div onClick={prevSlide}>
-          <SideCircle
-            image={
-              data.sanityIndex.carousel[currentPrev].pictures.image.asset
-                .gatsbyImageData
-            }
-            alt={data.sanityIndex.carousel[currentPrev].pictures.altText}
-          />
+          <Flip duration={600}>
+            <SideCircle
+              image={
+                data.sanityIndex.carousel[currentPrev].pictures.image.asset
+                  .gatsbyImageData
+              }
+              alt={data.sanityIndex.carousel[currentPrev].pictures.altText}
+            />
+          </Flip>
         </div>
-        <CenterCircle
-          image={
-            data.sanityIndex.carousel[current].pictures.image.asset
-              .gatsbyImageData
-          }
-          alt={data.sanityIndex.carousel[current].pictures.altText}
-          objectFit="cover"
-        />
-        <div onClick={nextSlide}>
-          <SideCircle
+        <Flip duration={850}>
+          <CenterCircle
             image={
-              data.sanityIndex.carousel[currentAfter].pictures.image.asset
+              data.sanityIndex.carousel[current].pictures.image.asset
                 .gatsbyImageData
             }
-            alt={data.sanityIndex.carousel[currentAfter].pictures.altText}
+            alt={data.sanityIndex.carousel[current].pictures.altText}
+            objectFit="cover"
           />
+        </Flip>
+        <div onClick={nextSlide}>
+          <Flip duration={1050}>
+            <SideCircle
+              image={
+                data.sanityIndex.carousel[currentAfter].pictures.image.asset
+                  .gatsbyImageData
+              }
+              alt={data.sanityIndex.carousel[currentAfter].pictures.altText}
+            />
+          </Flip>
         </div>
       </PicWrapper>
       <DotsWrappers>

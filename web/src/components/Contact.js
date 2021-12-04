@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
+import Pulse from "react-reveal/Pulse";
 const Wrapper = styled.address`
   padding: 50px;
   display: flex;
@@ -82,7 +83,9 @@ function Contact(props) {
 
   return (
     <Wrapper>
-      <Header>{data.sanityContact.title}</Header>
+      <Pulse>
+        <Header>{data.sanityContact.title}</Header>
+      </Pulse>
       <Row>
         <Icon
           image={data.sanityContact.phoneIcon.image.asset.gatsbyImageData}

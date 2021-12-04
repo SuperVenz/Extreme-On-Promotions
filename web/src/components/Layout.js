@@ -143,6 +143,7 @@ h1
   
 }
 h2{
+      line-height: 120%;
   font-size:24px;
     align-self: center;
   text-align: center;

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { useStaticQuery, graphql } from "gatsby";
 import { Link } from "gatsby";
+import Fade from "react-reveal/Fade";
 const Wrapper = styled.div`
   padding-bottom: 10vh;
   @media screen and (min-width: 600px) {
@@ -79,6 +80,7 @@ const Icon = styled(GatsbyImage)`
   height: 30vw;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-bottom: solid black 3px;
 
   @media screen and (min-width: 600px) {
     height: 20vw;
@@ -88,7 +90,6 @@ const Icon = styled(GatsbyImage)`
   }
 `;
 const Text = styled.h3`
-  border-top: solid black 3px;
   color: var(--service-card-font-color);
   display: flex;
   flex-flow: row wrap;
@@ -173,7 +174,7 @@ function ServiceCards() {
   return (
     <Wrapper>
       <Header>{data.sanityIndex.serviceCardsTitle}</Header>
-      <CardWrapper>
+      <CardWrapper left>
         {data.sanityIndex.services.map((arr, i) => {
           return (
             <ServiceCard key={i} to={"/services/" + arr.siteUrl.slug.current}>
@@ -190,9 +191,11 @@ function ServiceCards() {
                 image={arr.icon.image.asset.gatsbyImageData}
                 alt={arr.icon.altText}
               />
-              <Text>{arr.title}</Text>
-              <Line />
-              <Tag>{arr.tag}</Tag>
+              <Fade left big>
+                <Text>{arr.title}</Text>
+                <Line />
+                <Tag>{arr.tag}</Tag>
+              </Fade>
             </ServiceCard>
           );
         })}

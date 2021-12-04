@@ -7,10 +7,12 @@ import Reviews from "../components/Reviews";
 import ServiceCards from "../components/ServiceCards";
 import { graphql } from "gatsby";
 import styled from "styled-components";
+import Zoom from "react-reveal/Zoom";
 const Wrapper = styled.div`
   padding: 0 16px;
   display: flex;
   flex-flow: column nowrap;
+  height: 100vh;
   padding-bottom: 15vh;
   @media screen and (min-width: 600px) {
     padding-bottom: 20%;
@@ -35,10 +37,12 @@ function Index({ data }) {
     >
       <Logo />
       <HeroBanner />
-      <Wrapper>
-        <Header>{data.sanityIndex.topContent.header}</Header>
-        <Text>{data.sanityIndex.topContent.text}</Text>
-      </Wrapper>
+      <Zoom bottom>
+        <Wrapper>
+          <Header>{data.sanityIndex.topContent.header}</Header>
+          <Text>{data.sanityIndex.topContent.text}</Text>
+        </Wrapper>
+      </Zoom>
       <Carousel />
       <ServiceCards />
       <Reviews />
