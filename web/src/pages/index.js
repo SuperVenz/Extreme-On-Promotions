@@ -12,13 +12,12 @@ const Wrapper = styled.div`
   padding: 0 16px;
   display: flex;
   flex-flow: column nowrap;
-  height: 100vh;
-  padding-bottom: 15vh;
+  padding-bottom: 20vh;
   @media screen and (min-width: 600px) {
     padding-bottom: 20%;
   }
   @media screen and (min-width: 1000px) {
-    padding-bottom: 20vh;
+    padding-bottom: 40vh;
   }
 `;
 const Text = styled.p`

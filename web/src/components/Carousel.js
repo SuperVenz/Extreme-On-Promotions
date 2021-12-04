@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   padding: 0 16px;
   display: flex;
   flex-flow: column nowrap;
-  padding-bottom: 10vh;
+  padding-bottom: 20vh;
   @media screen and (min-width: 600px) {
     padding-bottom: 20%;
   }
@@ -37,6 +37,7 @@ const SideCircle = styled(GatsbyImage)`
     height: 17vw;
   }
   @media screen and (min-width: 1000px) {
+    height: 13vw;
   }
 `;
 const CenterCircle = styled(GatsbyImage)`
@@ -52,7 +53,7 @@ const CenterCircle = styled(GatsbyImage)`
     height: 30vw;
   }
   @media screen and (min-width: 900px) {
-    height: 25vw;
+    height: 20vw;
   }
 `;
 const DotsWrappers = styled.div`

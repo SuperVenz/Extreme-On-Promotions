@@ -5,12 +5,12 @@ import { useStaticQuery, graphql } from "gatsby";
 import { Link } from "gatsby";
 import Fade from "react-reveal/Fade";
 const Wrapper = styled.div`
-  padding-bottom: 10vh;
+  padding-bottom: 20vh;
   @media screen and (min-width: 600px) {
     padding-bottom: 20%;
   }
   @media screen and (min-width: 1000px) {
-    padding-bottom: 20vh;
+    padding-bottom: 40vh;
   }
 `;
 const Header = styled.h2``;
