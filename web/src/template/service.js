@@ -46,6 +46,7 @@ function Service({ data }) {
       <BackBar />
       <Wrapper>
         <StyledImage
+          loading="eager"
           image={data.sanityService.picture.image.asset.gatsbyImageData}
           alt={data.sanityService.picture.altText}
         />

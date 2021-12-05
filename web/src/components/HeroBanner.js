@@ -85,7 +85,12 @@ function HeroBanner() {
     data.sanityIndex.heroBanner.background.image.asset.gatsbyImageData
   );
   return (
-    <Hero {...heroBackground} preserveStackingContext alt="back ground pic">
+    <Hero
+      loading="eager"
+      {...heroBackground}
+      preserveStackingContext
+      alt="back ground pic"
+    >
       <Header>{data.sanityIndex.heroBanner.textContent.header}</Header>
       <Text>{data.sanityIndex.heroBanner.textContent.text}</Text>
       <Button to="/contact">
