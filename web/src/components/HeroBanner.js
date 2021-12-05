@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { convertToBgImage } from "gbimage-bridge";
 import BackgroundImage from "gatsby-background-image";
 import { useStaticQuery, graphql, Link } from "gatsby";
-import LightSpeed from "react-reveal/LightSpeed";
 // Styles
 const Hero = styled(BackgroundImage)`
   display: flex;
@@ -87,10 +86,8 @@ function HeroBanner() {
   );
   return (
     <Hero {...heroBackground} preserveStackingContext alt="back ground pic">
-      <LightSpeed left duration={1000}>
-        <Header>{data.sanityIndex.heroBanner.textContent.header}</Header>
-        <Text>{data.sanityIndex.heroBanner.textContent.text}</Text>
-      </LightSpeed>
+      <Header>{data.sanityIndex.heroBanner.textContent.header}</Header>
+      <Text>{data.sanityIndex.heroBanner.textContent.text}</Text>
       <Button to="/contact">
         {data.sanityIndex.heroBanner.button.tagline}
       </Button>
