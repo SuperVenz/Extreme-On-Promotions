@@ -193,7 +193,6 @@ function Form(props) {
             required
             type="tel"
             name="telephone"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             placeholder="123-456-7890"
             value={telephone}
             onChange={(e) => setTelephone(e.target.value)}
