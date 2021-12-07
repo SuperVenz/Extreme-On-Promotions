@@ -23,6 +23,9 @@ const PicWrapper = styled.div`
   justify-content: center;
   align-items: center;
 `;
+const Span = styled.p`
+  text-align: center;
+`;
 const SideCircle = styled(GatsbyImage)`
   aspect-ratio: 1;
   height: 15vw;
@@ -160,6 +163,7 @@ function Carousel() {
               }
               alt={data.sanityIndex.carousel[currentPrev].pictures.altText}
             />
+            <Span>Prev</Span>
           </Flip>
         </div>
         <Flip duration={850}>
@@ -181,6 +185,7 @@ function Carousel() {
               }
               alt={data.sanityIndex.carousel[currentAfter].pictures.altText}
             />
+            <Span>Next</Span>
           </Flip>
         </div>
       </PicWrapper>
