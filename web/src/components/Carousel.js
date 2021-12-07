@@ -163,7 +163,7 @@ function Carousel() {
               }
               alt={data.sanityIndex.carousel[currentPrev].pictures.altText}
             />
-            <Span>Prev</Span>
+            <Span onClick={prevSlide}>Prev</Span>
           </Flip>
         </div>
         <Flip duration={850}>
@@ -185,7 +185,7 @@ function Carousel() {
               }
               alt={data.sanityIndex.carousel[currentAfter].pictures.altText}
             />
-            <Span>Next</Span>
+            <Span onClick={nextSlide}>Next</Span>
           </Flip>
         </div>
       </PicWrapper>
