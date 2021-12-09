@@ -18,12 +18,7 @@ const StyledImage = styled(GatsbyImage)`
   }
 `;
 const ContentWrapper = styled.div`
-  @media screen and (min-width: 600px) {
-    height: 25vh;
-  }
-  @media screen and (min-width: 1000px) {
-    height: 50vh;
-  }
+  padding: 0 0 20vh 0;
 `;
 const Header = styled.h1`
   padding: 24px 0;

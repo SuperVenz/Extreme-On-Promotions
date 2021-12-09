@@ -28,7 +28,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        id: "YOUR_GOOGLE_TAGMANAGER_ID",
+        id: "GTM-PX9RS5R",
 
         // Include GTM in development.
         //
@@ -44,19 +44,17 @@ module.exports = {
         // Specify optional GTM environment details.
         gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
         gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
-        defaultDataLayer: function () {
-          return {
-            pageType: window.pageType,
-          };
-        },
+        dataLayerName: "data",
 
         // Name of the event that is triggered
         // on every Gatsby route change.
         //
         // Defaults to gatsby-route-change
+        routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
         // Defaults to false
         enableWebVitalsTracking: true,
         // Defaults to https://www.googletagmanager.com
+        selfHostedOrigin: "YOUR_SELF_HOSTED_ORIGIN",
       },
     },
     {

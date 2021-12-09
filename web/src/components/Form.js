@@ -113,6 +113,8 @@ function Form(props) {
   const [telephone, setTelephone] = useState("");
   const [description, setDescription] = useState("");
   const [email, setEmail] = useState("");
+  const [instagram, setInstagram] = useState("");
+
   function encode(data) {
     return Object.keys(data)
       .map(
@@ -132,6 +134,7 @@ function Form(props) {
         email: email,
         telephone: telephone,
         description: description,
+        instagram: instagram,
       }),
     })
       .then(() => navigate("/thankyou"))
@@ -185,6 +188,18 @@ function Form(props) {
             placeholder="email@email.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+          ></StringInput>
+        </Label>
+        <Label htmlFor="Instagram">
+          Instagram
+          <br />
+          <StringInput
+            required
+            type="text"
+            name="instagram"
+            placeholder="@amplifiedsd"
+            value={email}
+            onChange={(e) => setInstagram(e.target.value)}
           ></StringInput>
         </Label>
         <Label htmlFor="telephone">
