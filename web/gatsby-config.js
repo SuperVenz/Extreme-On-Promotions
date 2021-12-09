@@ -41,9 +41,6 @@ module.exports = {
         // Defaults to null
         defaultDataLayer: { platform: "gatsby" },
 
-        // Specify optional GTM environment details.
-        dataLayerName: "data",
-
         // Name of the event that is triggered
         // on every Gatsby route change.
         //
