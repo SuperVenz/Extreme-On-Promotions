@@ -39,6 +39,10 @@ const ServiceCard = styled(Link)`
   border-radius: 5px;
   -webkit-box-shadow: 6px 9px 15px -2px #000000;
   box-shadow: 6px 9px 15px -2px #000000;
+  p {
+    text-align: center;
+    color: var(--service-card-font-color);
+  }
   @media screen and (min-width: 600px) {
     width: 30%;
     padding: 0px 0px 15px;
@@ -195,6 +199,7 @@ function ServiceCards() {
                 <Text>{arr.title}</Text>
                 <Line />
                 <Tag>{arr.tag}</Tag>
+                <p>Click to learn more</p>
               </Fade>
             </ServiceCard>
           );

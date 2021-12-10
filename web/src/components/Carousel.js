@@ -25,6 +25,7 @@ const PicWrapper = styled.div`
 const Span = styled.p`
   text-align: center;
   margin-top: 16px;
+  cursor: pointer;
 `;
 const SideCircle = styled(GatsbyImage)`
   aspect-ratio: 1;
@@ -165,6 +166,7 @@ function Carousel() {
           <Span onClick={prevSlide}>Prev</Span>
         </div>
         <CenterCircle
+          onTouchMove={nextSlide}
           image={
             data.sanityIndex.carousel[current].pictures.image.asset
               .gatsbyImageData
