@@ -191,7 +191,7 @@ function ServiceCards() {
                 image={arr.icon.image.asset.gatsbyImageData}
                 alt={arr.icon.altText}
               />
-              <Fade left big>
+              <Fade bottom>
                 <Text>{arr.title}</Text>
                 <Line />
                 <Tag>{arr.tag}</Tag>

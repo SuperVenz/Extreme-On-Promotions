@@ -7,7 +7,7 @@ import Reviews from "../components/Reviews";
 import ServiceCards from "../components/ServiceCards";
 import { graphql } from "gatsby";
 import styled from "styled-components";
-import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 const Wrapper = styled.div`
   padding: 0 16px;
   display: flex;
@@ -36,12 +36,12 @@ function Index({ data }) {
     >
       <Logo />
       <HeroBanner />
-      <Zoom bottom>
+      <Fade bottom>
         <Wrapper>
           <Header>{data.sanityIndex.topContent.header}</Header>
           <Text>{data.sanityIndex.topContent.text}</Text>
         </Wrapper>
-      </Zoom>
+      </Fade>
       <Carousel />
       <ServiceCards />
       <Reviews />

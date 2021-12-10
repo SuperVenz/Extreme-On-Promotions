@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { useStaticQuery, graphql } from "gatsby";
-import Roll from "react-reveal/Roll";
+import Fade from "react-reveal/Fade";
 // Styles
 const Wrapper = styled.div`
   display: flex;
@@ -180,9 +180,9 @@ function Reviews() {
   return (
     <Wrapper>
       <Card>
-        <Roll left>
+        <Fade bpttom>
           <Header>{data.sanityIndex.reviewsTitle}</Header>
-        </Roll>
+        </Fade>
         <PicWrapper>
           <CenterCircle
             image={
